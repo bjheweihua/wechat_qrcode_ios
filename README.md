@@ -1,0 +1,2 @@
+# wechat_qrcode_ios
+OpenCV微信扫码引擎,制作成iOS的framework
