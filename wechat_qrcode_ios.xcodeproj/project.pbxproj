@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		562ABCAC25EC94AD007396AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 562ABCAB25EC94AD007396AD /* AppDelegate.m */; };
+		562ABCB225EC94AD007396AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562ABCB125EC94AD007396AD /* ViewController.m */; };
+		562ABCB525EC94AD007396AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562ABCB325EC94AD007396AD /* Main.storyboard */; };
+		562ABCB725EC94AE007396AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562ABCB625EC94AE007396AD /* Assets.xcassets */; };
+		562ABCBA25EC94AE007396AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562ABCB825EC94AE007396AD /* LaunchScreen.storyboard */; };
+		562ABCBD25EC94AE007396AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 562ABCBC25EC94AE007396AD /* main.m */; };
+		565D2E212696F0B20028F6D9 /* UIMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2DFC2696F0B20028F6D9 /* UIMaskView.m */; };
+		565D2E222696F0B20028F6D9 /* JDDCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 565D2DFF2696F0B20028F6D9 /* JDDCameraViewController.mm */; };
+		565D2E232696F0B20028F6D9 /* QRBoxInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E002696F0B20028F6D9 /* QRBoxInfo.m */; };
+		565D2E242696F0B20028F6D9 /* ELCameraBaseCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E032696F0B20028F6D9 /* ELCameraBaseCapture.m */; };
+		565D2E252696F0B20028F6D9 /* ELCameraControlCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E042696F0B20028F6D9 /* ELCameraControlCapture.m */; };
+		565D2E262696F0B20028F6D9 /* UIPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E072696F0B20028F6D9 /* UIPointView.m */; };
+		565D2E362696F2490028F6D9 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E342696F2490028F6D9 /* UIBaseViewController.m */; };
+		565D2E392696F32C0028F6D9 /* UIJDDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E382696F32C0028F6D9 /* UIJDDNavigationBar.m */; };
+		565D2E4A2696F4D50028F6D9 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D2E482696F4D50028F6D9 /* UIColor+Additions.m */; };
+		56AC9F602BEA14E40047F2AC /* detect.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 56AC9F572BEA14E40047F2AC /* detect.caffemodel */; };
+		56AC9F612BEA14E40047F2AC /* detect.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 56AC9F582BEA14E40047F2AC /* detect.prototxt */; };
+		56AC9F622BEA14E40047F2AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 56AC9F592BEA14E40047F2AC /* README.md */; };
+		56AC9F632BEA14E40047F2AC /* sr.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 56AC9F5A2BEA14E40047F2AC /* sr.caffemodel */; };
+		56AC9F642BEA14E40047F2AC /* sr.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 56AC9F5B2BEA14E40047F2AC /* sr.prototxt */; };
+		56AC9F652BEA14E40047F2AC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AC9F5D2BEA14E40047F2AC /* opencv2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		562ABCA725EC94AD007396AD /* wechat_qrcode_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechat_qrcode_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		562ABCAA25EC94AD007396AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		562ABCAB25EC94AD007396AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		562ABCB025EC94AD007396AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		562ABCB125EC94AD007396AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		562ABCB425EC94AD007396AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		562ABCB625EC94AE007396AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		562ABCB925EC94AE007396AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		562ABCBB25EC94AE007396AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		562ABCBC25EC94AE007396AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		565D2DFC2696F0B20028F6D9 /* UIMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMaskView.m; sourceTree = "<group>"; };
+		565D2DFD2696F0B20028F6D9 /* UIPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPointView.h; sourceTree = "<group>"; };
+		565D2DFE2696F0B20028F6D9 /* JDDCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDCameraViewController.h; sourceTree = "<group>"; };
+		565D2DFF2696F0B20028F6D9 /* JDDCameraViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JDDCameraViewController.mm; sourceTree = "<group>"; };
+		565D2E002696F0B20028F6D9 /* QRBoxInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRBoxInfo.m; sourceTree = "<group>"; };
+		565D2E022696F0B20028F6D9 /* ELCameraControlCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCameraControlCapture.h; sourceTree = "<group>"; };
+		565D2E032696F0B20028F6D9 /* ELCameraBaseCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCameraBaseCapture.m; sourceTree = "<group>"; };
+		565D2E042696F0B20028F6D9 /* ELCameraControlCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCameraControlCapture.m; sourceTree = "<group>"; };
+		565D2E052696F0B20028F6D9 /* ELCameraBaseCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCameraBaseCapture.h; sourceTree = "<group>"; };
+		565D2E062696F0B20028F6D9 /* UIMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMaskView.h; sourceTree = "<group>"; };
+		565D2E072696F0B20028F6D9 /* UIPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPointView.m; sourceTree = "<group>"; };
+		565D2E082696F0B20028F6D9 /* QRBoxInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRBoxInfo.h; sourceTree = "<group>"; };
+		565D2E312696F2490028F6D9 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
+		565D2E342696F2490028F6D9 /* UIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseViewController.m; sourceTree = "<group>"; };
+		565D2E372696F32C0028F6D9 /* UIJDDNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIJDDNavigationBar.h; sourceTree = "<group>"; };
+		565D2E382696F32C0028F6D9 /* UIJDDNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIJDDNavigationBar.m; sourceTree = "<group>"; };
+		565D2E462696F43C0028F6D9 /* AppDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDevice.h; sourceTree = "<group>"; };
+		565D2E482696F4D50028F6D9 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		565D2E492696F4D50028F6D9 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		56AC9F572BEA14E40047F2AC /* detect.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.caffemodel; sourceTree = "<group>"; };
+		56AC9F582BEA14E40047F2AC /* detect.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = detect.prototxt; sourceTree = "<group>"; };
+		56AC9F592BEA14E40047F2AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		56AC9F5A2BEA14E40047F2AC /* sr.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = sr.caffemodel; sourceTree = "<group>"; };
+		56AC9F5B2BEA14E40047F2AC /* sr.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sr.prototxt; sourceTree = "<group>"; };
+		56AC9F5D2BEA14E40047F2AC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		562ABCA425EC94AD007396AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56AC9F652BEA14E40047F2AC /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		562ABC9E25EC94AD007396AD = {
+			isa = PBXGroup;
+			children = (
+				562ABCA925EC94AD007396AD /* QRScan */,
+				562ABCA825EC94AD007396AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		562ABCA825EC94AD007396AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				562ABCA725EC94AD007396AD /* wechat_qrcode_ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		562ABCA925EC94AD007396AD /* QRScan */ = {
+			isa = PBXGroup;
+			children = (
+				565D2DDF2696F0B20028F6D9 /* Classes */,
+				565D2DFB2696F0B20028F6D9 /* JDDCamera */,
+				562ABCAA25EC94AD007396AD /* AppDelegate.h */,
+				562ABCAB25EC94AD007396AD /* AppDelegate.m */,
+				562ABCB025EC94AD007396AD /* ViewController.h */,
+				562ABCB125EC94AD007396AD /* ViewController.m */,
+				562ABCB325EC94AD007396AD /* Main.storyboard */,
+				562ABCB625EC94AE007396AD /* Assets.xcassets */,
+				562ABCB825EC94AE007396AD /* LaunchScreen.storyboard */,
+				562ABCBB25EC94AE007396AD /* Info.plist */,
+				562ABCBC25EC94AE007396AD /* main.m */,
+			);
+			path = QRScan;
+			sourceTree = "<group>";
+		};
+		565D2DDF2696F0B20028F6D9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				565D2E472696F4D50028F6D9 /* Category */,
+				565D2E452696F43C0028F6D9 /* Macro */,
+				565D2E302696F2490028F6D9 /* BaseViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		565D2DFB2696F0B20028F6D9 /* JDDCamera */ = {
+			isa = PBXGroup;
+			children = (
+				56AC9F5E2BEA14E40047F2AC /* opencv2 */,
+				565D2E062696F0B20028F6D9 /* UIMaskView.h */,
+				565D2DFC2696F0B20028F6D9 /* UIMaskView.m */,
+				565D2DFD2696F0B20028F6D9 /* UIPointView.h */,
+				565D2E072696F0B20028F6D9 /* UIPointView.m */,
+				565D2DFE2696F0B20028F6D9 /* JDDCameraViewController.h */,
+				565D2DFF2696F0B20028F6D9 /* JDDCameraViewController.mm */,
+				565D2E082696F0B20028F6D9 /* QRBoxInfo.h */,
+				565D2E002696F0B20028F6D9 /* QRBoxInfo.m */,
+				565D2E012696F0B20028F6D9 /* CameraCapture */,
+			);
+			path = JDDCamera;
+			sourceTree = "<group>";
+		};
+		565D2E012696F0B20028F6D9 /* CameraCapture */ = {
+			isa = PBXGroup;
+			children = (
+				565D2E022696F0B20028F6D9 /* ELCameraControlCapture.h */,
+				565D2E042696F0B20028F6D9 /* ELCameraControlCapture.m */,
+				565D2E052696F0B20028F6D9 /* ELCameraBaseCapture.h */,
+				565D2E032696F0B20028F6D9 /* ELCameraBaseCapture.m */,
+			);
+			path = CameraCapture;
+			sourceTree = "<group>";
+		};
+		565D2E302696F2490028F6D9 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				565D2E372696F32C0028F6D9 /* UIJDDNavigationBar.h */,
+				565D2E382696F32C0028F6D9 /* UIJDDNavigationBar.m */,
+				565D2E312696F2490028F6D9 /* UIBaseViewController.h */,
+				565D2E342696F2490028F6D9 /* UIBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		565D2E452696F43C0028F6D9 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				565D2E462696F43C0028F6D9 /* AppDevice.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		565D2E472696F4D50028F6D9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				565D2E492696F4D50028F6D9 /* UIColor+Additions.h */,
+				565D2E482696F4D50028F6D9 /* UIColor+Additions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		56AC9F5C2BEA14E40047F2AC /* opencv_3rdparty-wechat_qrcode */ = {
+			isa = PBXGroup;
+			children = (
+				56AC9F572BEA14E40047F2AC /* detect.caffemodel */,
+				56AC9F582BEA14E40047F2AC /* detect.prototxt */,
+				56AC9F592BEA14E40047F2AC /* README.md */,
+				56AC9F5A2BEA14E40047F2AC /* sr.caffemodel */,
+				56AC9F5B2BEA14E40047F2AC /* sr.prototxt */,
+			);
+			path = "opencv_3rdparty-wechat_qrcode";
+			sourceTree = "<group>";
+		};
+		56AC9F5E2BEA14E40047F2AC /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				56AC9F5C2BEA14E40047F2AC /* opencv_3rdparty-wechat_qrcode */,
+				56AC9F5D2BEA14E40047F2AC /* opencv2.framework */,
+			);
+			path = opencv2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		562ABCA625EC94AD007396AD /* wechat_qrcode_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 562ABCC025EC94AE007396AD /* Build configuration list for PBXNativeTarget "wechat_qrcode_ios" */;
+			buildPhases = (
+				562ABCA325EC94AD007396AD /* Sources */,
+				562ABCA425EC94AD007396AD /* Frameworks */,
+				562ABCA525EC94AD007396AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wechat_qrcode_ios;
+			productName = JDTQRScan;
+			productReference = 562ABCA725EC94AD007396AD /* wechat_qrcode_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		562ABC9F25EC94AD007396AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					562ABCA625EC94AD007396AD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 562ABCA225EC94AD007396AD /* Build configuration list for PBXProject "wechat_qrcode_ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 562ABC9E25EC94AD007396AD;
+			productRefGroup = 562ABCA825EC94AD007396AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				562ABCA625EC94AD007396AD /* wechat_qrcode_ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		562ABCA525EC94AD007396AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56AC9F612BEA14E40047F2AC /* detect.prototxt in Resources */,
+				56AC9F602BEA14E40047F2AC /* detect.caffemodel in Resources */,
+				56AC9F642BEA14E40047F2AC /* sr.prototxt in Resources */,
+				56AC9F622BEA14E40047F2AC /* README.md in Resources */,
+				562ABCBA25EC94AE007396AD /* LaunchScreen.storyboard in Resources */,
+				562ABCB725EC94AE007396AD /* Assets.xcassets in Resources */,
+				56AC9F632BEA14E40047F2AC /* sr.caffemodel in Resources */,
+				562ABCB525EC94AD007396AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		562ABCA325EC94AD007396AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565D2E392696F32C0028F6D9 /* UIJDDNavigationBar.m in Sources */,
+				565D2E212696F0B20028F6D9 /* UIMaskView.m in Sources */,
+				562ABCB225EC94AD007396AD /* ViewController.m in Sources */,
+				565D2E252696F0B20028F6D9 /* ELCameraControlCapture.m in Sources */,
+				562ABCAC25EC94AD007396AD /* AppDelegate.m in Sources */,
+				565D2E232696F0B20028F6D9 /* QRBoxInfo.m in Sources */,
+				565D2E222696F0B20028F6D9 /* JDDCameraViewController.mm in Sources */,
+				565D2E362696F2490028F6D9 /* UIBaseViewController.m in Sources */,
+				565D2E242696F0B20028F6D9 /* ELCameraBaseCapture.m in Sources */,
+				562ABCBD25EC94AE007396AD /* main.m in Sources */,
+				565D2E262696F0B20028F6D9 /* UIPointView.m in Sources */,
+				565D2E4A2696F4D50028F6D9 /* UIColor+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		562ABCB325EC94AD007396AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				562ABCB425EC94AD007396AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		562ABCB825EC94AE007396AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				562ABCB925EC94AE007396AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		562ABCBE25EC94AE007396AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		562ABCBF25EC94AE007396AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		562ABCC125EC94AE007396AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5TKVHWTT79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JDTQRScan/opencv2",
+					"$(PROJECT_DIR)/JDTQRScan/JDDCamera/opencv2",
+					"$(PROJECT_DIR)/QRScan/JDDCamera/opencv2",
+				);
+				INFOPLIST_FILE = QRScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wechat.qrcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		562ABCC225EC94AE007396AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F6Q9F9N36U;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5TKVHWTT79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JDTQRScan/opencv2",
+					"$(PROJECT_DIR)/JDTQRScan/JDDCamera/opencv2",
+					"$(PROJECT_DIR)/QRScan/JDDCamera/opencv2",
+				);
+				INFOPLIST_FILE = QRScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wechat.qrcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = crm_dst_profile;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = common_test;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		562ABCA225EC94AD007396AD /* Build configuration list for PBXProject "wechat_qrcode_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562ABCBE25EC94AE007396AD /* Debug */,
+				562ABCBF25EC94AE007396AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		562ABCC025EC94AE007396AD /* Build configuration list for PBXNativeTarget "wechat_qrcode_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562ABCC125EC94AE007396AD /* Debug */,
+				562ABCC225EC94AE007396AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 562ABC9F25EC94AD007396AD /* Project object */;
+}
