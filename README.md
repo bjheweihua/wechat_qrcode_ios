@@ -15,8 +15,8 @@ cmake 3.22.1
 
 ## 第1步：克隆|下载opencv原代码
 
-1. 下载(opencv](https://github.com/opencv/opencv/tree/master)。选择master最新稳定版本。
-2. 下载(opencv_contrib](https://github.com/opencv/opencv_contrib/tree/master)，选择master最新稳定版本。
+1. 下载[opencv](https://github.com/opencv/opencv/tree/master)。选择master最新稳定版本。
+2. 下载[opencv_contrib](https://github.com/opencv/opencv_contrib/tree/master)，选择master最新稳定版本。
 3. 将下载好的opencv、opencv_contrib放入同一个目录下：
 ![1](media/17150505298270/1.png)
 
@@ -62,8 +62,9 @@ iphoneos_archs = ["armv7", "armv7s", "arm64"]去掉armv7、armv7s xcode已经不
 
 ## 第6步：导入iOS工程，Demo工程集成
 1. 将打包好的opencv2.framework + 模型文件导入到demo工程
-2. oc代码调用c++代码，见demo:
-3. demo效果如下：
+2. oc代码调用c++代码，见[demo](https://github.com/bjheweihua/wechat_qrcode_ios)
+   
+4. demo效果如下：
 ![qr_scan_0](media/https://github.com/bjheweihua/wechat_qrcode_ios/blob/main/readme_res/qr_scan_0.jpg)
 ![qr_scan_1](media/https://github.com/bjheweihua/wechat_qrcode_ios/blob/main/readme_res/qr_scan_1.jpg)
 
